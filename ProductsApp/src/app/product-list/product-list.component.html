@@ -1,0 +1,87 @@
+<div class="card">
+  <div class="card-header">
+    Movies 
+<a  style="float:right;"id="addmovies_button"  routerLink="/admindashboard"  role="button"><i class="fas fa-arrow-alt-circle-left"></i></a>
+  </div>
+  <div class="class-body">
+    <div class="table-responsive">
+      <table class="table" *ngIf="products && products.length">
+        <thead>
+          <tr>
+            <th>
+             Image
+            </th>
+            <th>Movie Name</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody   *ngFor="let product of products">
+          <tr>
+            <td>
+              <img src={{product.imageUrl}}  width="50px" margin="50px"/>
+            
+            </td>
+            <td>{{product.productName}}</td>
+            <td>{{product.genre}}</td>
+            <td>{{product.releaseDate}}</td>
+            <td>{{product.description}}</td>
+            <td><button class="btn btn-danger" (click)="onDelete(product._id)">Delete</button>
+            &nbsp;
+            <button class="btn btn-warning" (click)="onUpdate(product._id)">Update</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card">
+    <div class="card-header">
+    Booked Tickets
+    </div>
+    <div class="class-body">
+      <div class="table-responsive">
+        <table class="table" *ngIf="products && products.length">
+          <thead>
+            <tr>
+              <th>
+               Image
+              </th>
+              <th>Movie Name</th>
+              <th>Genre</th>
+              <th>Year</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody   *ngFor="let product of products">
+            <tr>
+              <td>
+                <img src={{product.imageUrl}}  width="50px" margin="50px"/>
+              
+              </td>
+              <td>{{product.productName}}</td>
+              <td>{{product.genre}}</td>
+              <td>{{product.releaseDate}}</td>
+              <td>{{product.description}}</td>
+              <td><button class="btn btn-danger" (click)="onDelete(product._id)">Delete</button>
+              &nbsp;
+              <button class="btn btn-warning" (click)="onUpdate(product._id)">Update</button></td>
+            </tr>
+  
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+
+ -->

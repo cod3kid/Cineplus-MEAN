@@ -1,0 +1,24 @@
+#mele{
+
+
+    background-color: #11172B;
+    height: 50px;
+    
+    
+}
+
+#viewmovies_button , #addmovies_button , #viewusers_button , #viewbookedtickets_button,#logout_button{
+    margin-left: 10px;
+    background-color: #11172B;
+    border: 1px solid #E01922;
+
+}
+
+#body{
+
+   background-image:url('http://araira.org/wp-content/uploads/2018/04/1-1.jpg');
+   height: 100%;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+}

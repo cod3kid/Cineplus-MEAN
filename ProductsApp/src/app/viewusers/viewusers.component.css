@@ -1,0 +1,30 @@
+#body{
+    background-image: url("adminloginbg.jpg");
+    height: 545px;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;   
+}
+
+.fa-arrow-alt-circle-left{
+
+    color: #E01933;
+}
+.class-body{
+    background: transparent;
+}
+
+.table{
+
+    background: transparent;
+}
+
+thead{
+
+    background: transparent;  
+}
+
+.card-header{
+    color: white;
+    background: #11172B;
+}

@@ -1,0 +1,12 @@
+.card-header{
+    background-color: #11172B;
+    color:white;
+    border: 1px solid #E01933;
+}
+
+#addmovies_button{
+
+    background-color: #11172B;
+    color: #FFFFFF;
+    border-color: #E01933;
+}

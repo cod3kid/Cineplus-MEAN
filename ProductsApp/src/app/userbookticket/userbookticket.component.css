@@ -1,0 +1,47 @@
+.container{
+        
+    border:2px solid #E01933;
+height:450px;
+width:400px;
+border-radius: 6px;
+background-color: #11172B;
+
+}
+
+select{
+    border-radius:2px;
+}
+
+#body2{
+
+    background-image: url("adminloginbg.jpg");
+    height: 545px;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+
+}
+
+
+
+input{
+
+border-radius: 2px;
+
+
+}
+
+.btn{
+
+    background: #11172B;
+    border-color: #E01933;
+   
+
+}
+
+.card-header{
+    background-color: #11172B;
+    color:white;
+    border: 1px solid #E01933;
+    height: 60px;
+}

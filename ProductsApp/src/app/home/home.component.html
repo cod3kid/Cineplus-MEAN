@@ -1,0 +1,51 @@
+<div id="body">
+
+ <!-- <div class="searchsthalam">
+
+    <div id="cities_dropdown">
+        
+        <select  style="width:150px;"class="form-control"  >
+          <option selected> Choose City </option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Calicut">Calicut</option>
+          <option value="Kochi">Kochi</option>
+          
+        </select>
+      </div>
+
+ </div> -->
+ <br>
+ 
+ <br><br><br><br>
+<div class="container">
+  <div class="row">
+<div class="flip-card"  *ngFor="let product of products"> <br>
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      
+      <img src={{product.imageUrl}} alt="Avatar" style="width:180px;height:210px; border-radius:10px;">
+
+  
+
+
+    </div>
+    <div class="flip-card-back">
+     
+        <br> <h6>   <p>{{product.productName}}</p></h6> 
+     <i class="fa fa-film"> &nbsp; {{ product.genre }}</i> <br> 
+     <i class="fas fa-calendar-alt">&nbsp; {{ product.releaseDate }}</i>
+
+      
+        <!-- <br><p style="margin:3px;">{{product.description}}</p>  -->
+     
+    </div>
+  </div>
+</div>
+</div>
+&nbsp;&nbsp;&nbsp;
+</div>
+  
+ 
+ 
+
+</div>

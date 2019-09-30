@@ -1,0 +1,48 @@
+<div style="background: url('adminloginbg.jpg');">
+<div id="mele">
+  <a  style="float:right; margin-right: 10px;"id="addmovies_button"  routerLink="/admindashboard"  role="button"><i class="fas fa-arrow-alt-circle-left  fa-2x"></i></a>
+  
+</div>
+
+<form (ngSubmit)="submitMethod()">
+  <div class="form-group">
+    <br>
+    <label>Name</label> &nbsp;
+    <input  style="width:365px;" type="text" class="form-control"  name="productName" [(ngModel)]="productItem.productName" required>&nbsp;&nbsp;&nbsp;
+    <br>
+  
+
+ <div>
+    <label>Genre</label> &nbsp;
+    <select  style="width:150px;"class="form-control"  name="genre" [(ngModel)]="productItem.genre" required>
+      <option value="Action">Action</option>
+      <option value="Romance">Romance</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+      <option value="Comedy">Comedy</option>
+      <option value="Drama">Drama</option>
+      <option value="Horror">Horror</option>
+    </select>
+  </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
+
+    <div>
+    <label>Release Date</label>&nbsp;
+    <input  style="width:100px;" type="number" name="releaseDate" class="form-control"  [(ngModel)]="productItem.releaseDate" min="1980" max="2019" value="2010" step="1" required/>
+  </div>
+  
+    <br>
+  
+
+    <label>Description</label>
+    <textarea style="width:400px; " name="description" class="form-control"  [(ngModel)]="productItem.description" required></textarea>
+    <br>
+   <label>Image</label>
+    <input style="width:400px; " type="text" name="imageUrl" class="form-control"  [(ngModel)]="productItem.imageUrl" required>
+    <br>
+    <button type="submit" id="add_button" class="btn btn-primary">Add</button>
+  </div>
+  <br><br>
+  </form>
+
+</div>

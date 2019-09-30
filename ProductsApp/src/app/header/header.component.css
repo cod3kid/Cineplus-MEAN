@@ -1,0 +1,27 @@
+.nav{
+    height: 80px;
+   background:  #11172B;
+
+}
+
+
+ul{
+    list-style-type: none;
+    vertical-align: middle;
+   
+}
+li{ color: white;
+    padding: 10px;
+    display: inline;
+    font-weight: bold;
+    
+}
+li a{
+    font-weight: bold;
+    color: white;
+    
+}
+li.active{
+    border-bottom: 3px solid #E01933;
+}
+

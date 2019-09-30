@@ -1,0 +1,40 @@
+<div id="body">
+
+    <div class="card">
+        <div class="card-header">
+         Booked Tickets <a  style="float:right;"id="addmovies_button"  routerLink="/admindashboard"  role="button"><i class="fas fa-arrow-alt-circle-left fa-2x"></i></a>
+      
+        </div>
+        <div class="class-body">
+          <div class="table-responsive">
+            <table class="table" *ngIf="bookedtickets && bookedtickets.length">
+              <thead>
+                <tr>
+                    <th>User Name</th>
+                  <th>Movie Name</th>
+                  <th>No of Seats </th>
+                  <th> Show Time </th>
+                  <th> Day </th>
+                  <th> Month</th>
+                </tr>
+              </thead>
+              <tbody   >
+                <tr *ngFor="let bookedticket of bookedtickets">
+                    <td>{{bookedticket.bookerName}}</td>
+                  <td>{{bookedticket.movieName}}</td>
+                  <td>{{bookedticket.noOfSeats}}</td>
+                  <td>{{bookedticket.showTime}}</td>
+                  <td>{{bookedticket.day}}</td>
+                  <td>{{bookedticket.month}}</td>
+                
+                  <td><button class="btn btn-danger" (click)="onDeletebookedticket(bookedticket._id)">Delete</button>
+                  &nbsp;
+                  
+                </tr>
+      
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+</div>

@@ -1,0 +1,40 @@
+form{
+    padding-left: 200px;
+    padding-right: 200px;
+    color: white;
+    
+}
+
+.container{
+
+    background-color: #11172B;
+    height:400px;
+    width:200px;
+}
+
+
+.fa-arrow-alt-circle-left {
+    color: #E01933;
+    
+  }
+
+#mele{
+    background-color: #11172B;
+    height:30px;
+
+}
+#add_button{
+
+    background-color: #11172B;
+    color:white;
+    border-color:#E01933;
+}
+
+#back_button{
+
+    background-color: #11172B;
+    color:white;
+
+    border-color:#E01933;
+}
+

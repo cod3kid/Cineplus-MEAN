@@ -1,0 +1,73 @@
+<div id="body2">
+
+<div class="card-header">
+  
+  <a  style="float:right;" class="btn btn-info"  routerLink="/userdashboard"  role="button">Back</a>
+
+  </div>
+  <br>
+<div class="container">
+    
+    
+
+    <form (ngSubmit)="submitMethod2()">
+        <div style="margin-left: 30px;"  class="form-group">
+          <br>
+          <label style="color:white;">Name</label>&nbsp;
+          
+          <input type="text"    name="bookerName" value={{yoyo}} [(ngModel)]="btItem.bookerName">
+
+          <br><br>
+          
+            <label style="color:white;">Movie</label>&nbsp;
+            
+            <select   name="movieName" [(ngModel)]="btItem.movieName" >
+                 <option  *ngFor="let product of products" value="{{product.productName}}">{{product.productName}}</option>
+            </select>
+
+            
+
+           <br> <br><label style="color:white;">Seats</label>&nbsp;&nbsp;&nbsp;
+            <select   name="noOfSeats" [(ngModel)]="btItem.noOfSeats" style=" width:40px;" >
+                  <option *ngFor="let number of [1,2,3,4,5,6]" value="{{number}}">{{number}}</option>
+           </select>
+<br><br>
+
+
+
+           <label style="color:white;">Time</label>&nbsp;&nbsp;&nbsp;
+           <select   name="showTime" [(ngModel)]="btItem.showTime" style=" width:100px;" >
+              <option  value="10:30 A.M">10:30 A.M</option>
+              <option  value="1:30 P.M">01:30 P.M</option>
+              <option  value="04:30 P.M">04:30 P.M</option>
+              <option  value="07:30 P.M">07:30 P.M</option>
+              <option  value="09:30 P.M">09:30 P.M</option>
+         </select>
+           <br><br>
+
+          
+        <label style="color:white;">Month</label>&nbsp;&nbsp;&nbsp;
+              <select   name="month" [(ngModel)]="btItem.month" style=" width:100px;" >
+                 <option *ngFor="let i of monthname" value="{{i}}">{{i}}</option>
+  
+            </select>
+           <br><br>
+
+           
+            <label style="color:white; ">Day</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input  style="width:50px; height:23px;    border-radius:2px;" type="number" name="day"   [(ngModel)]="btItem.day" min="01" max="31" value="01" step="1" required/>
+
+              <br><br>
+              
+            <div class="row" style="margin-left:2px;">
+                <label  style="color:white;">Price</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="color:white;" >₹ {{btItem.noOfSeats * 150}}</div>
+               </div>
+          
+          <button type="submit" id="add_button"  class="btn btn-primary">Book Now</button>
+         
+        </div>
+        </form>
+        
+      </div>
+    </div>
